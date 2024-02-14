@@ -34,6 +34,16 @@ python main.py
 
 The script will connect to the first available device, dump the UI hierarchy, parse the XML, and extract information about input fields such as text, resource ID, and bounds.
 
+**The main function in your code performs the following tasks:**
+
+- Connects to the first available Android device.
+- Launches the specified application using the provided package name.
+- Waits for a few seconds to allow the app to stabilize.
+- Dumps the UI hierarchy of the currently displayed screen.
+- Parses the XML of the UI hierarchy to extract information about input fields of type  
+  android.widget.EditText.
+- Prints the extracted input field data.
+
 Output:
 The extracted input field information will be printed to the console in the following format:
 
